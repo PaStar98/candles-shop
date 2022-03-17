@@ -1,0 +1,14 @@
+@import './store/_variables';
+
+.candles-shop {
+  background-color: $bg-secondary-color;
+
+  .candles-shop__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style-type: none;
+  }
+}

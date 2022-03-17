@@ -1,5 +1,11 @@
+import Main from '../../Layout/Main/Main';
+
 const Soaps = () => {
-  return <h1>I am soaps</h1>;
+  return (
+    <Main>
+      <h1>I am soaps</h1>
+    </Main>
+  );
 };
 
 export default Soaps;
