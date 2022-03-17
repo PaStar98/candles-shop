@@ -1,7 +1,7 @@
 import NavigationItem from './NavigationItem';
 import styles from './Navigation.module.scss';
 
-const Navigation = () => {
+const Navigation = props => {
   const navigationContent = [
     {
       id: 'n1',
@@ -21,22 +21,23 @@ const Navigation = () => {
     },
   ];
 
+  const navigationItems = navigationContent.map(el => (
+    <NavigationItem
+      key={el.id}
+      id={el.id}
+      className={styles['navigation__list-item']}
+      val={el.val}
+      onSetPageContent={props.onSetPageContent}
+    />
+  ));
+
   return (
     <header className={styles['navigation-container']}>
       <nav className={styles.navigation}>
         <h1 className={styles['navigation__logo']}>
           Candles <span>Shop</span>
         </h1>
-        <ul className={styles['navigation__list']}>
-          {navigationContent.map(el => (
-            <NavigationItem
-              key={el.id}
-              id={el.id}
-              className={styles['navigation__list-item']}
-              val={el.val}
-            />
-          ))}
-        </ul>
+        <ul className={styles['navigation__list']}>{navigationItems}</ul>
       </nav>
     </header>
   );

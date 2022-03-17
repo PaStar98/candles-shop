@@ -1,7 +1,13 @@
 const NavigationItem = props => {
+  const identifyBtnHandler = () => {
+    props.onSetPageContent(props.id);
+  };
+
   return (
     <li className={props.className}>
-      <button type={'button'}>{props.val}</button>
+      <button type={'button'} onClick={identifyBtnHandler}>
+        {props.val}
+      </button>
     </li>
   );
 };
