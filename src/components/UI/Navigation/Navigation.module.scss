@@ -1,0 +1,52 @@
+@import 'store/_variables.scss';
+
+.navigation-container {
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  background-color: $bg-primary-color;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+  width: $width-primary;
+  border-radius: 0 0 $br-primary $br-primary;
+
+  .navigation__logo {
+    font-size: 2rem;
+    letter-spacing: 1px;
+
+    & span {
+      color: $primary-color;
+    }
+  }
+
+  .navigation__list {
+    display: inherit;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1.5rem;
+
+    .navigation__list-item button {
+      outline: none;
+      border: none;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      background-color: $bg-primary-color_hover;
+      color: white;
+      border-radius: $br-primary;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
