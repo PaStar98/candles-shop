@@ -1,9 +1,7 @@
-import Slider from '../UI/Slider/Slider';
-import Main from '../Layout/Main/Main';
-import HeaderCard from '../Layout/HeaderCard/HeaderCard';
-import styles from './Home.module.scss';
+import HeaderCard from '../../../Layout/HeaderCard/HeaderCard';
+import styles from './Headers.module.scss';
 
-const Home = () => {
+const Headers = () => {
   const headerCardsArr = [
     {
       id: 'hc1',
@@ -28,12 +26,7 @@ const Home = () => {
     />
   ));
 
-  return (
-    <Main>
-      <Slider />
-      <section className={styles['header-cards']}>{headerCards}</section>
-    </Main>
-  );
+  return <section className={styles['header-cards']}>{headerCards}</section>;
 };
 
-export default Home;
+export default Headers;

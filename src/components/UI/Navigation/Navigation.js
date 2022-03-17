@@ -16,7 +16,7 @@ const Navigation = () => {
       val: 'Mydła',
     },
     {
-      id: 'n1',
+      id: 'n4',
       val: 'O nas',
     },
   ];

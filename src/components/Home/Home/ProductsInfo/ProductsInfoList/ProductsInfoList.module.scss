@@ -1,0 +1,14 @@
+@import './store/variables';
+
+.products-info {
+  background-color: $bg-primary-color;
+  padding: 5rem 2rem;
+  text-align: center;
+
+  .products-info__list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 5%;
+  }
+}

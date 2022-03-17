@@ -1,4 +1,4 @@
-@import '../../../../store/variables';
+@import 'store/_variables';
 
 .header-cards {
   display: flex;
@@ -20,6 +20,10 @@
 
     h4 {
       color: $primary-color;
+    }
+
+    span {
+      font-size: 0.9rem;
     }
   }
 }
