@@ -6,6 +6,7 @@
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
 .navigation {
@@ -40,7 +41,7 @@
       font-size: 1rem;
       padding: 0.5rem 1rem;
       cursor: pointer;
-      background-color: $bg-primary-color_hover;
+      background-color: $bg-secondary-color;
       color: white;
       border-radius: $br-primary;
 

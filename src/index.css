@@ -13,8 +13,5 @@ html {
 body {
   background-color: #111;
   color: white;
-  margin-top: 10rem;
-
-  /*  nav testing  */
-  height: 200vh;
+  margin: 0 auto;
 }
