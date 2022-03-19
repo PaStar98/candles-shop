@@ -1,0 +1,42 @@
+@import './store/variables';
+
+.aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  padding: 0.3rem 2rem;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $bg-secondary-color;
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    span.special-color {
+      margin-left: 1.5rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.special-color {
+  color: $primary-color;
+}
+
+.normal-color {
+  color: #efefef;
+}
