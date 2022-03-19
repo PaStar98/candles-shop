@@ -5,19 +5,19 @@ const Navigation = props => {
   const navigationContent = [
     {
       id: 'n1',
-      val: 'Home',
+      val: 'Strona Główna',
     },
     {
       id: 'n2',
-      val: 'Świeczki',
+      val: 'Świece Sojowe',
     },
     {
       id: 'n3',
-      val: 'Mydła',
+      val: 'O Nas',
     },
     {
       id: 'n4',
-      val: 'O nas',
+      val: 'Kontakt',
     },
   ];
 
