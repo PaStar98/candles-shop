@@ -6,6 +6,7 @@ import Candles from './components/Home/Candles/Candles';
 import Soaps from './components/Home/Soaps/Soaps';
 import About from './components/Home/About/About';
 import Footer from './components/UI/Footer/Footer';
+import TopAsideInfo from './components/UI/TopAsideInfo/TopAsideInfo';
 
 function App() {
   const [pageContent, setPageContent] = useState('n1');
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <>
+      <TopAsideInfo />
       <Navigation onSetPageContent={setPageContentHandler} />
       {currentPage}
       <Footer />
