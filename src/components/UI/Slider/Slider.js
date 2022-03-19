@@ -8,6 +8,7 @@ import 'swiper/css/autoplay';
 
 import candles from '../../../assets/candles/candlesDispatch';
 
+import CustomButton from "../CustomButton/CustomButton";
 import styles from './Slider.module.scss';
 
 const Slider = () => {
@@ -29,7 +30,12 @@ const Slider = () => {
       >
         {candles.map((el, index) => (
           <SwiperSlide key={index.toString()}>
-            <img className={styles.slide} src={el} alt="candle" />
+            <figure className={styles.slide}>
+              <img  src={el} alt="candle" />
+              <figcaption>
+                <CustomButton className={styles.btn}>Sprawdź</CustomButton>
+              </figcaption>
+            </figure>
           </SwiperSlide>
         ))}
       </Swiper>
