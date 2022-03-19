@@ -20,3 +20,6 @@ const CandlesShopListItem = props => {
 };
 
 export default CandlesShopListItem;
+
+// TODO: CHANGE WIDTH VALUE FROM PERCENTAGE TO CONSTANT
+// FIXME: RESOLVE PROBLEM WITH IMG SIZE ADJUST

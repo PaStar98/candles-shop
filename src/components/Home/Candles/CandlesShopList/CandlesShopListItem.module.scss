@@ -9,13 +9,15 @@
   }
 
   figure {
-    position: relative;
     display: table;
     text-align: center;
+    overflow: hidden;
 
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
+      background-size: contain;
+      object-fit: contain;
       border: 5px solid $bg-primary-color;
     }
 

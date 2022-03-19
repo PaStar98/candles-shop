@@ -1,0 +1,10 @@
+@import './store/variables';
+
+.header {
+  background-color: $bg-primary-color;
+  width: 100%;
+
+  span {
+    font-size: 1.25rem;
+  }
+}
