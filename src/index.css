@@ -16,4 +16,7 @@ body {
   background-color: #111;
   color: white;
   margin: 0 auto;
+  background-image: url('./assets/bg-layout.jpg');
+  background-repeat: repeat;
+  background-size: contain;
 }
