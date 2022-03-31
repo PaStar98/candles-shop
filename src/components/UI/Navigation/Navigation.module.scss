@@ -2,11 +2,11 @@
 
 .navigation-container {
   display: inline-block;
-  position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
   z-index: 100;
+  position: absolute;
+  top: 30px;
+  left: 0;
 }
 
 .navigation {
@@ -50,4 +50,11 @@
       }
     }
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 0;
 }
