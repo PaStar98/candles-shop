@@ -17,6 +17,7 @@ const Slider = () => {
       <Swiper
         // install Swiper modules
         modules={[Pagination, Autoplay]}
+        loop={true}
         spaceBetween={50}
         slidesPerView={3}
         speed={2000}
