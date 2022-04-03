@@ -22,14 +22,14 @@ const NAVIGATION_CONTENT = [
 ];
 
 const Navigation = (props) => {
-  const [offset, setOffset] = useState();
+  const [offset, setOffset] = useState(0);
 
   useEffect(() => {
+    // making nav sticky on certain scrollY value
     const onScroll = () => setOffset(window.scrollY);
 
     window.removeEventListener('scroll', onScroll);
     window.addEventListener("scroll", onScroll, { passive: true });
-    console.log(offset);
 
     return () => window.removeEventListener("scroll", onScroll);
   }, [offset]);
