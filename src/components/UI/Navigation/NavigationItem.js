@@ -1,11 +1,11 @@
-const NavigationItem = props => {
+const NavigationItem = (props) => {
   const identifyBtnHandler = () => {
     props.onSetPageContent(props.id);
   };
 
   return (
     <li className={props.className}>
-      <button type={'button'} onClick={identifyBtnHandler}>
+      <button type={"button"} onClick={identifyBtnHandler}>
         {props.val}
       </button>
     </li>

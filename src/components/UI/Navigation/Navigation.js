@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import NavigationItem from "./NavigationItem";
 import styles from "./Navigation.module.scss";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 import logo from "../../../assets/candles-shop__logo+BG/Logo dla ponurego.png";
 
 const NAVIGATION_CONTENT = [
@@ -46,6 +49,13 @@ const Navigation = (props) => {
     />
   ));
 
+  const faExpandBarsIcon =
+    window.screen.width < 1300 ? (
+      <FontAwesomeIcon icon={faBars} size={"2x"} cursor={"pointer"} />
+    ) : (
+      ""
+    );
+
   return (
     <header
       className={`${styles["navigation-container"]} ${
@@ -57,6 +67,7 @@ const Navigation = (props) => {
           <img src={logo} alt="Logo Astronauty ze świeczką" />
         </a>
         <ul className={styles["navigation__list"]}>{navigationItems}</ul>
+        {faExpandBarsIcon}
       </nav>
     </header>
   );
