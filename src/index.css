@@ -6,15 +6,23 @@
   margin: 0;
 
   line-height: 1.4;
+
+
 }
 
 html {
   font-family: 'Roboto', sans-serif;
   z-index: 1000;
+
 }
 
 body {
-  background-color: #111;
+  /*background-color: #111;*/
+  background-image: url("assets/candles-shop__logo+BG/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50%, 0;
+  background-size: cover;
+
   color: white;
   margin: 0 auto;
 }

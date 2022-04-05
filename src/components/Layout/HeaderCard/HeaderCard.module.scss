@@ -8,6 +8,13 @@
   padding: 3rem;
   margin: auto;
   width: 75%;
+  cursor: default;
+  transition: all .15s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px $primary-color;
+  }
 
   h5,
   h4,
