@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import NavigationItem from "./NavigationItem";
 import styles from "./Navigation.module.scss";
 
+import logo from "../../../assets/candles-shop__logo+BG/Logo dla ponurego.png";
+
 const NAVIGATION_CONTENT = [
   {
     id: "n1",
@@ -28,7 +30,7 @@ const Navigation = (props) => {
     // making nav sticky on certain scrollY value
     const onScroll = () => setOffset(window.scrollY);
 
-    window.removeEventListener('scroll', onScroll);
+    window.removeEventListener("scroll", onScroll);
     window.addEventListener("scroll", onScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", onScroll);
@@ -51,9 +53,9 @@ const Navigation = (props) => {
       }`}
     >
       <nav className={styles.navigation}>
-        <h1 className={styles["navigation__logo"]}>
-          Candles <span>Shop</span>
-        </h1>
+        <a className={styles.logo} href="#">
+          <img src={logo} alt="Logo Astronauty ze świeczką" />
+        </a>
         <ul className={styles["navigation__list"]}>{navigationItems}</ul>
       </nav>
     </header>
